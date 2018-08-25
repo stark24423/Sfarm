@@ -1,0 +1,152 @@
+<?php
+	//啟動 session
+	session_start();
+?>
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sfram-發展動機</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+						  <h1><a href="index.php" id="logo"><img src="images/logo1.png" width="117" height="38">LORA智慧型農場</a></h1>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+					  <li><a href="index.php">首頁</a></li>
+					  <li><a href="login.php">會員登入</a>
+						<ul>
+							<li><a href="reg.php">會員註冊</a></li>
+						</ul>
+					  </li>
+					  <li><a href="Development.html">發展動機</a></li>
+					  <li class="current"><a href="controlfarm.php">管理農場</a></li>
+					  <li><a href="about.html">關於作者</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="content">
+
+									<!-- Content -->
+
+										<article class="box page-content">
+
+											<header>
+												<?php
+												if(isset($_GET['msg'])){
+												echo "<p class='error'>{$_GET['msg']}</p>";
+												}
+												?>
+										      <table width="100%" border="1" cellspacing="0" cellpadding="0">
+											      <tbody>
+											        <tr>
+											          <td><a href="logout.php">登出網站</a>&nbsp;</td>
+											        </tr>
+										        </tbody>
+										      </table>
+										      <h2>管理農場 </h2>
+											</header>
+
+											<section>
+												<span class="image featured"></span><img src="images/lora-icon.jpg" alt="" width="728" height="384" class="lorapic"/>
+												<p> 在過去的無線傳輸中，大多數的產品只能在距離與低功耗間做取捨，如:Bluetootg、WiFi、3G、4G LTE……等，但是在近年由Semtech公司發布了一種新型的基於1GHz以下的超長距低功耗數據傳輸技術LoRa，LoRa有著低功耗、長距離、低成本、高穿透、易建設。LoRa使用CSS展頻調變技術降低干擾，符合使用效益。 </p>
+											</section>
+
+											<section>
+											  <h3>1.能源</h3>
+											  <p> 由於近年石油是使用率最高的燃料，可是它並不是再生能源，總是會有枯竭的一天，在未來節約能源是一件必要的事。 </p>
+											</section>
+										  <section>
+										    <h3>2.勞力 </h3>
+										    <p> 近年來社會因少子化與高齡化的交互影響，造成勞動力生產力的下降，為了解決次問題，以機械代替人力降低人力需求。 </p>
+										  </section>
+											<section>
+											  <h3>3.食安問題 </h3>
+											  <p> 食安問題層出不窮，加上都市發展、氣候變遷、基因改造與污染等因素影響下，為了產出食用無虞的作物，世，除了擴增單位面積產能，也以產出安全無污染的蔬菜為目標。 </p>
+											</section>
+</article>
+
+								</div>
+							</div>
+							<div class="col-12">
+
+								<!-- Features -->
+									<section class="box features">
+									  <h2 class="major">原理簡介 </h2>
+									  <div>
+											<div class="row">
+												<div class="col-3 col-6-medium col-12-small">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="lorapicture/圖片2.jpg" alt="" /></a>
+															<h3><a href="#">ardiuno lora-mini &nbsp;開發板</a></h3>
+															<p> 藉由此來與來接收感測器訊號， 並且當作物聯網中的endnode來作使用 </p>
+														</section>
+
+												</div>
+												<div class="col-3 col-6-medium col-12-small">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="lorapicture/圖片3.jpg" alt="" /></a>
+															<h3><a href="#">lora hat</a>&nbsp;</h3>
+															<p> 使用此與Resperry Pi結合，作為gatway也同時將伺服器架設與此，RPI本身需要電量不到10W又使用linux系統有穩定性佳的功效。 </p>
+														</section>
+
+												</div>
+												<div class="col-3 col-6-medium col-12-small">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="lorapicture/圖片1.png" alt="" /></a>
+															<h3>農場架構</h3>
+															<p>藉由Endnode收集資訊發送至Gatway後， 將資料存取於Server，供使用者管理查看。 </p>
+														</section>
+
+												</div>
+</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
